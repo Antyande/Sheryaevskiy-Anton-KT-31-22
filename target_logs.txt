@@ -1,0 +1,3 @@
+2025-02-21 19:12:11.8648||ERROR|SheryaevskiyAntonKT_31_22.Controllers.WeatherForecastController|Method was called |url: http://localhost/WeatherForecast|action: Get
+2025-02-21 19:21:34.2592||ERROR|SheryaevskiyAntonKT_31_22.Controllers.WeatherForecastController|New method was called |url: http://localhost/WeatherForecast|action: AddNewSummary
+2025-02-21 19:21:48.9006||ERROR|SheryaevskiyAntonKT_31_22.Controllers.WeatherForecastController|New method was called |url: http://localhost/WeatherForecast|action: AddNewSummary
