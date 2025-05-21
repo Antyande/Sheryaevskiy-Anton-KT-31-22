@@ -5,11 +5,11 @@ using SheryaevskiyAntonKT_31_22.Models;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class DisciplinesConfiguration : IEntityTypeConfiguration<Disciplines>
+    public class DisciplinesConfiguration : IEntityTypeConfiguration<Discipline>
     {
 
-        public const string tableName = "cd_discipline";
-        public void Configure(EntityTypeBuilder<Disciplines> builder)
+        public const string tableName = "Disciplines";
+        public void Configure(EntityTypeBuilder<Discipline> builder)
         {
             builder
                 .HasKey(p => p.DisciplineId)

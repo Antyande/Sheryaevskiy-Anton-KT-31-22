@@ -5,7 +5,7 @@
         public int CafedraId { get; set; }
         public string CafedraName { get; set; }
         public int AdminId { get; set; }
-        public DateTime dataosnovania { get; set; }
-        public Prepods Admin { get; internal set; }
+        public DateTime Dataosnovania { get; set; }
+        public Teacher Boss { get; internal set; }
     }
 }

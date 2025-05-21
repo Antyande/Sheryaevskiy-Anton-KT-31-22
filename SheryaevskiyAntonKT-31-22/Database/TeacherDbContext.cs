@@ -7,20 +7,20 @@ namespace SheryaevskiyAntonKT_31_22.Database
     public class TeacherDbContext : DbContext
     {
         DbSet<Cafedra> Cafedras { get; set; }
-        DbSet<Degrees> Degrees { get; set; }
-        DbSet<Disciplines> Disciplines { get; set; }
-        DbSet<Nagruzka> Nagruzkas { get; set; }
-        DbSet<Positions> Positions { get; set; }
-        DbSet<Prepods> Prepods { get; set; }
+        DbSet<AcademicDegree> Degrees { get; set; }
+        DbSet<Discipline> Disciplines { get; set; }
+        DbSet<Workload> Workload { get; set; }
+        DbSet<Position> Positions { get; set; }
+        DbSet<Teacher> Teachers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new CafedraConfiguration());
-            modelBuilder.ApplyConfiguration(new DegreeConfiguration());
+            modelBuilder.ApplyConfiguration(new CafedrasConfiguration());
+            modelBuilder.ApplyConfiguration(new AcademicDegreesConfiguration());
             modelBuilder.ApplyConfiguration(new DisciplinesConfiguration());
-            modelBuilder.ApplyConfiguration(new NagruzkaConfiguration());
+            modelBuilder.ApplyConfiguration(new WorkloadConfiguration());
             modelBuilder.ApplyConfiguration(new PositionsConfiguration());
-            modelBuilder.ApplyConfiguration(new PrepodsConfiguration());
+            modelBuilder.ApplyConfiguration(new TeachersConfiguration());
         }
         public TeacherDbContext(DbContextOptions<TeacherDbContext> options) : base(options)
         {

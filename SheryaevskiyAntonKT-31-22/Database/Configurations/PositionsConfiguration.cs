@@ -5,10 +5,10 @@ using SheryaevskiyAntonKT_31_22.Models;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class PositionsConfiguration : IEntityTypeConfiguration<Positions>
+    public class PositionsConfiguration : IEntityTypeConfiguration<Position>
     {
         private const string tableName = "Positions";
-        public void Configure(EntityTypeBuilder<Positions> builder)
+        public void Configure(EntityTypeBuilder<Position> builder)
         {
             builder
                 .HasKey(p => p.PositionId)

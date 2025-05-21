@@ -5,65 +5,65 @@ using SheryaevskiyAntonKT_31_22.Models;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class PrepodsConfiguration : IEntityTypeConfiguration<Prepods>
+    public class TeachersConfiguration : IEntityTypeConfiguration<Teacher>
     {
-        private const string tableName = "Prepods";
+        private const string tableName = "Teachers";
 
-        public void Configure(EntityTypeBuilder<Prepods> builder)
+        public void Configure(EntityTypeBuilder<Teacher> builder)
         {
             builder
-                .HasKey(p => p.IdPrepod)
-                .HasName($"pk_{tableName}_prepods_id");
+                .HasKey(p => p.TeacherId)
+                .HasName($"pk_{tableName}_Teachers_id");
 
-            builder.Property(p => p.IdPrepod)
+            builder.Property(p => p.TeacherId)
                 .ValueGeneratedOnAdd();
 
-            builder.Property(p => p.IdPrepod)
-                .HasColumnName("id_prepod")
-                .HasComment("Айдишник преподавателей");
+            builder.Property(p => p.TeacherId)
+                .HasColumnName("id_Teacher")
+                .HasComment("Id преподавателей");
 
             builder.Property(p => p.FirstName)
                 .IsRequired()
-                .HasColumnName("prepod_firstname")
+                .HasColumnName("Teacher_firstname")
                 .HasColumnType(ColumnType.String).HasMaxLength(150)
                 .HasComment("Имя преподавателя");
 
             builder.Property(p => p.LastName)
                 .IsRequired()
-                .HasColumnName("prepod_lastname")
+                .HasColumnName("Teacher_lastname")
                 .HasColumnType(ColumnType.String).HasMaxLength(150)
                 .HasComment("Отчество преподавателя");
 
-            builder.Property(p => p.MidName)
+            builder.Property(p => p.MiddleName)
                 .IsRequired()
-                .HasColumnName("prepod_midname")
+                .HasColumnName("Teacher_midname")
                 .HasColumnType(ColumnType.String).HasMaxLength(150)
                 .HasComment("Фамилия преподавателя");
 
-            builder.Property(p => p.DegreeId)
-                .HasColumnName("prepod_digreeId")
+            builder.Property(p => p.AcademicDegreeId)
+                .HasColumnName("Teacher_digreeId")
                 .HasColumnType(ColumnType.Int)
                 .HasComment("Степень преподавателя");
 
 
             builder.ToTable(tableName)
-                .HasOne(p => p.Degrees)
+                .HasOne(p => p.AcademicDegree)
                 .WithMany()
-                .HasForeignKey(p => p.DegreeId)
+                .HasForeignKey(p => p.AcademicDegreeId)
                 .HasConstraintName("fk_degree_id")
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.ToTable(tableName)
-                .HasIndex(p => p.DegreeId, $"idx_{tableName}_fk_degree_id");
+                .HasIndex(p => p.AcademicDegreeId, $"idx_{tableName}_fk_degree_id");
 
             builder.Property(p => p.PositionId)
-                .HasColumnName("prepod_positionId")
+                .HasColumnName("Teacher_positionId")
                 .HasColumnType(ColumnType.Int)
                 .HasComment("Должность преподавателя");
 
 
             builder.ToTable(tableName)
-                .HasOne(p => p.Positions)
+                .HasOne(p => p.Position)
                 .WithMany()
                 .HasForeignKey(p => p.PositionId)
                 .HasConstraintName("fk_position_id")
@@ -75,7 +75,7 @@ namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 
             builder.Property(p => p.CafedraId)
                 .IsRequired()
-                .HasColumnName("prepod_cafedraId")
+                .HasColumnName("Teacher_cafedraId")
                 .HasColumnType(ColumnType.Int)
                 .HasComment("Кафедра преподавателя");
 

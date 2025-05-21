@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class CafedraConfiguration : IEntityTypeConfiguration<Cafedra>
+    public class CafedrasConfiguration : IEntityTypeConfiguration<Cafedra>
     {
 
-        public const string tableName = "cd_cafedra";
+        public const string tableName = "Cafedras";
         public void Configure(EntityTypeBuilder<Cafedra> builder)
         {
             builder
@@ -27,27 +27,27 @@ namespace SheryaevskiyAntonKT_31_22.Database.Configurations
                 .HasColumnType(ColumnType.String).HasMaxLength(150)
                 .HasComment("Название кафедры");
 
-            builder.Property(p => p.dataosnovania)
-                .HasColumnName("date_Osnovania")
+            builder.Property(p => p.Dataosnovania)
+                .HasColumnName("date_osnovania")
                 .HasColumnType(ColumnType.Date)
                 .HasComment("Дата основания");
 
             builder.Property(c => c.AdminId)
                 .IsRequired()
-                .HasColumnName("c_admin_id")
+                .HasColumnName("boss_id")
                 .HasColumnType(ColumnType.Int)
-                .HasComment("Идентификатор администратора(заведующего) кафедры");
+                .HasComment("Идентификатор заведующего кафедры");
 
-            builder.ToTable(tableName).HasOne(c => c.Admin)
+            builder.ToTable(tableName).HasOne(c => c.Boss)
                 .WithOne()
                 .HasForeignKey<Cafedra>(c => c.AdminId)
-                .HasConstraintName("fk_admin_id_prepod_id")
+                .HasConstraintName("fk_boss_id_prepod_id")
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.ToTable(tableName)
-                .HasIndex(p => p.CafedraId, $"idx_{tableName}_fk_admin_id_prepod_id");
+                .HasIndex(p => p.CafedraId, $"idx_{tableName}_fk_boss_id_prepod_id");
 
-            builder.Navigation(p => p.Admin).AutoInclude();
+            builder.Navigation(p => p.Boss).AutoInclude();
 
         }
     }

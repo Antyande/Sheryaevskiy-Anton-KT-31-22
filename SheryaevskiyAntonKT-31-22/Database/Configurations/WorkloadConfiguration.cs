@@ -5,22 +5,22 @@ using SheryaevskiyAntonKT_31_22.Models;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class NagruzkaConfiguration : IEntityTypeConfiguration<Nagruzka>
+    public class WorkloadConfiguration : IEntityTypeConfiguration<Workload>
 
     {
-        private const string TableName = "cd_Nagruzka";
+        private const string TableName = "Workload";
 
-        public void Configure(EntityTypeBuilder<Nagruzka> builder)
+        public void Configure(EntityTypeBuilder<Workload> builder)
         {
-            builder.HasKey(s => s.Id).HasName($"pk_{TableName}_Id");
+            builder.HasKey(s => s.WorkloadId).HasName($"pk_{TableName}_Id");
 
-            builder.Property(s => s.Id)
+            builder.Property(s => s.WorkloadId)
                 .ValueGeneratedOnAdd()
-                .HasColumnName("para_id")
+                .HasColumnName("lesson_id")
                 .HasComment("Идентификатор занятия");
 
             builder.Property(s => s.DisciplineId)
-                .HasColumnName("c_discipline_id")
+                .HasColumnName("discipline_id")
                 .HasComment("Идентификатор предмета");
 
             builder.ToTable(TableName).HasOne(s => s.Disciplines)
@@ -32,22 +32,22 @@ namespace SheryaevskiyAntonKT_31_22.Database.Configurations
             builder.ToTable(TableName)
                 .HasIndex(p => p.DisciplineId, $"idx_{TableName}_fk_subject_id");
 
-            builder.Property(s => s.PrepodId)
-                .HasColumnName("c_prepod_id")
+            builder.Property(s => s.TeacherId)
+                .HasColumnName("teacher_id")
                 .HasComment("Идентификатор преподавателя");
 
-            builder.ToTable(TableName).HasOne(s => s.Prepod)
+            builder.ToTable(TableName).HasOne(s => s.Teacher)
                 .WithMany()
-                .HasForeignKey(s => s.PrepodId)
-                .HasConstraintName($"fk_prepod_id")
+                .HasForeignKey(s => s.TeacherId)
+                .HasConstraintName($"fk_TeacherId_id")
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.ToTable(TableName)
-                .HasIndex(p => p.PrepodId, $"idx_{TableName}_fk_prepod_id");
+                .HasIndex(p => p.TeacherId, $"idx_{TableName}_fk_TeacherId_id");
 
-            builder.Property(s => s.totalHours)
+            builder.Property(s => s.Hours)
                 .IsRequired()
-                .HasColumnName("c_nagruzka_hours")
+                .HasColumnName("workload_hours")
                 .HasColumnType(ColumnType.Int)
                 .HasComment("Нагрузка в часах");
 
