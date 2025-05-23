@@ -788,3 +788,282 @@
 2025-05-21 21:36:31.8253 Info Shutdown() called. Logger closing...
 2025-05-21 21:36:31.8253 Info Closing old configuration.
 2025-05-21 21:36:31.8253 Info Logger has been closed down.
+2025-05-22 13:33:47.6072 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-22 13:33:47.6623 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-22 13:33:47.6623 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-22 13:33:47.6623 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-22 13:33:47.6899 Info Configuration initialized.
+2025-05-22 13:33:47.8440 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-22 13:36:17.1621 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-22 13:36:17.2600 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-22 13:36:17.2710 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-22 13:36:17.2710 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-22 13:36:17.3116 Info Configuration initialized.
+2025-05-22 13:36:17.4864 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-22 13:38:40.1566 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-22 13:38:40.2398 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-22 13:38:40.2398 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-22 13:38:40.2615 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-22 13:38:40.2847 Info Configuration initialized.
+2025-05-22 13:38:40.5099 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 09:02:04.3075 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 09:02:04.4027 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 09:02:04.4027 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 09:02:04.4027 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 09:02:04.4309 Info Configuration initialized.
+2025-05-23 09:02:04.6830 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 09:05:17.4964 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 09:05:17.5919 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 09:05:17.5998 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 09:05:17.5998 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 09:05:17.6187 Info Configuration initialized.
+2025-05-23 09:05:17.8434 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:33:48.0708 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:33:48.1467 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:33:48.1534 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:33:48.1534 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:33:48.1719 Info Configuration initialized.
+2025-05-23 10:33:48.3253 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:47:20.9739 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:47:21.0238 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:47:21.0290 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:47:21.0290 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:47:21.0447 Info Configuration initialized.
+2025-05-23 10:47:21.1752 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:56:37.6501 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:56:37.6858 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:56:37.6858 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:56:37.6858 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:56:37.7044 Info Configuration initialized.
+2025-05-23 10:56:37.7575 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:56:37.8066 Info Shutdown() called. Logger closing...
+2025-05-23 10:56:37.8066 Info Closing old configuration.
+2025-05-23 10:56:37.8161 Info Logger has been closed down.
+2025-05-23 10:56:55.2807 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:56:55.3166 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:56:55.3218 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:56:55.3218 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:56:55.3218 Info Configuration initialized.
+2025-05-23 10:56:55.3809 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:56:55.4311 Info Shutdown() called. Logger closing...
+2025-05-23 10:56:55.4311 Info Closing old configuration.
+2025-05-23 10:56:55.4311 Info Logger has been closed down.
+2025-05-23 10:58:27.9528 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:58:27.9991 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:58:28.0076 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:58:28.0076 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:58:28.0249 Info Configuration initialized.
+2025-05-23 10:58:28.0932 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:58:28.1624 Info Shutdown() called. Logger closing...
+2025-05-23 10:58:28.1624 Info Closing old configuration.
+2025-05-23 10:58:28.1624 Info Logger has been closed down.
+2025-05-23 10:58:35.1883 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:58:35.2254 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:58:35.2254 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:58:35.2358 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:58:35.2358 Info Configuration initialized.
+2025-05-23 10:58:35.3102 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:58:35.3638 Info Shutdown() called. Logger closing...
+2025-05-23 10:58:35.3638 Info Closing old configuration.
+2025-05-23 10:58:35.3638 Info Logger has been closed down.
+2025-05-23 10:59:13.9017 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 10:59:13.9528 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 10:59:13.9528 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 10:59:13.9673 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 10:59:13.9850 Info Configuration initialized.
+2025-05-23 10:59:14.1005 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 13:38:04.7513 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 13:38:04.8137 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 13:38:04.8190 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 13:38:04.8190 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 13:38:04.8371 Info Configuration initialized.
+2025-05-23 13:38:04.9913 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 13:39:19.9322 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 13:39:19.9790 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 13:39:19.9839 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 13:39:19.9839 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 13:39:20.0031 Info Configuration initialized.
+2025-05-23 13:39:20.1148 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 13:42:16.0955 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 13:42:16.1471 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 13:42:16.1527 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 13:42:16.1527 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 13:42:16.1671 Info Configuration initialized.
+2025-05-23 13:42:16.2939 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:06:33.9161 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 14:06:33.9516 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 14:06:33.9566 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 14:06:33.9566 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:06:33.9566 Info Configuration initialized.
+2025-05-23 14:06:34.0216 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:06:34.1021 Info Shutdown() called. Logger closing...
+2025-05-23 14:06:34.1021 Info Closing old configuration.
+2025-05-23 14:06:34.1099 Info Logger has been closed down.
+2025-05-23 14:08:23.7363 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 14:08:23.7691 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 14:08:23.7691 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 14:08:23.7691 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:08:23.7908 Info Configuration initialized.
+2025-05-23 14:08:23.8450 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:08:23.9020 Info Shutdown() called. Logger closing...
+2025-05-23 14:08:23.9020 Info Closing old configuration.
+2025-05-23 14:08:23.9125 Info Logger has been closed down.
+2025-05-23 14:18:51.9262 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 14:18:51.9777 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 14:18:51.9823 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 14:18:51.9823 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:18:51.9823 Info Configuration initialized.
+2025-05-23 14:18:52.1299 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:30:50.5741 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 14:30:50.6228 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 14:30:50.6228 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 14:30:50.6228 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:30:50.6470 Info Configuration initialized.
+2025-05-23 14:30:50.7848 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:34:40.0658 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 14:34:40.1140 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 14:34:40.1140 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 14:34:40.1140 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:34:40.1140 Info Configuration initialized.
+2025-05-23 14:34:40.2388 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:35:56.7138 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 14:35:56.7602 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 14:35:56.7602 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 14:35:56.7602 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 14:35:56.7801 Info Configuration initialized.
+2025-05-23 14:35:56.8940 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:39:14.3283 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:39:14.3908 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:39:14.3908 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:39:14.3908 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:39:14.4120 Info Configuration initialized.
+2025-05-23 17:39:14.5876 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:41:37.8152 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:41:37.8660 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:41:37.8660 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:41:37.8767 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:41:37.8767 Info Configuration initialized.
+2025-05-23 17:41:38.0085 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:44:34.2578 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:44:34.3069 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:44:34.3069 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:44:34.3175 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:44:34.3175 Info Configuration initialized.
+2025-05-23 17:44:34.4358 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:46:08.7652 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:46:08.8088 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:46:08.8138 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:46:08.8138 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:46:08.8138 Info Configuration initialized.
+2025-05-23 17:46:08.9602 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:49:13.5217 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:49:13.5680 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:49:13.5680 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:49:13.5775 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:49:13.5775 Info Configuration initialized.
+2025-05-23 17:49:13.6945 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:53:39.2544 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:53:39.2989 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:53:39.2989 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:53:39.3130 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:53:39.3130 Info Configuration initialized.
+2025-05-23 17:53:39.4362 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:56:46.9402 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 17:56:46.9883 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 17:56:46.9883 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 17:56:46.9883 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 17:56:47.0115 Info Configuration initialized.
+2025-05-23 17:56:47.1246 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:00:12.2190 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:00:12.2641 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:00:12.2681 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:00:12.2681 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:00:12.2821 Info Configuration initialized.
+2025-05-23 18:00:12.3953 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:01:16.2382 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:01:16.2867 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:01:16.2867 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:01:16.2867 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:01:16.3061 Info Configuration initialized.
+2025-05-23 18:01:16.4190 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:06:07.0844 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:06:07.1355 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:06:07.1409 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:06:07.1409 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:06:07.1601 Info Configuration initialized.
+2025-05-23 18:06:07.2727 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:11:09.4314 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:11:09.4806 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:11:09.4851 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:11:09.4851 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:11:09.5004 Info Configuration initialized.
+2025-05-23 18:11:09.6099 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:12:40.7275 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:12:40.7716 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:12:40.7716 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:12:40.7823 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:12:40.7823 Info Configuration initialized.
+2025-05-23 18:12:40.9047 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:14:20.5613 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:14:20.5974 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:14:20.5974 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:14:20.6065 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:14:20.6065 Info Configuration initialized.
+2025-05-23 18:14:20.6634 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:14:20.7145 Info Shutdown() called. Logger closing...
+2025-05-23 18:14:20.7145 Info Closing old configuration.
+2025-05-23 18:14:20.7241 Info Logger has been closed down.
+2025-05-23 18:14:44.7963 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:14:44.8297 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:14:44.8297 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:14:44.8297 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:14:44.8455 Info Configuration initialized.
+2025-05-23 18:14:44.8960 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:14:44.9420 Info Shutdown() called. Logger closing...
+2025-05-23 18:14:44.9420 Info Closing old configuration.
+2025-05-23 18:14:44.9505 Info Logger has been closed down.
+2025-05-23 18:15:14.7900 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:15:14.8253 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:15:14.8302 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:15:14.8302 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:15:14.8433 Info Configuration initialized.
+2025-05-23 18:15:14.8985 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:15:14.9511 Info Shutdown() called. Logger closing...
+2025-05-23 18:15:14.9511 Info Closing old configuration.
+2025-05-23 18:15:14.9587 Info Logger has been closed down.
+2025-05-23 18:15:26.1276 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:15:26.1673 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:15:26.1673 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:15:26.1673 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:15:26.1855 Info Configuration initialized.
+2025-05-23 18:15:26.2350 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:15:26.2861 Info Shutdown() called. Logger closing...
+2025-05-23 18:15:26.2861 Info Closing old configuration.
+2025-05-23 18:15:26.2861 Info Logger has been closed down.
+2025-05-23 18:15:59.2636 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:15:59.3083 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:15:59.3083 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:15:59.3083 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:15:59.3271 Info Configuration initialized.
+2025-05-23 18:15:59.4440 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:19:20.7908 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:19:20.8231 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:19:20.8282 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:19:20.8282 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:19:20.8282 Info Configuration initialized.
+2025-05-23 18:19:20.8916 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:19:20.9413 Info Shutdown() called. Logger closing...
+2025-05-23 18:19:20.9413 Info Closing old configuration.
+2025-05-23 18:19:20.9500 Info Logger has been closed down.
+2025-05-23 18:26:12.1128 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:26:12.1780 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:26:12.1780 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:26:12.1906 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:26:12.2047 Info Configuration initialized.
+2025-05-23 18:26:12.3328 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:27:17.2328 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'ConnectionStrings' from section 'NLog'
+2025-05-23 18:27:17.2828 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-05-23 18:27:17.2828 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-05-23 18:27:17.2828 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog
+2025-05-23 18:27:17.3101 Info Configuration initialized.
+2025-05-23 18:27:17.4336 Info Validating config: TargetNames=my-file, ConfigItems=22 ConfigSection=NLog

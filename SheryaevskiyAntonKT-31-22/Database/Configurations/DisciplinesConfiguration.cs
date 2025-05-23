@@ -5,29 +5,36 @@ using SheryaevskiyAntonKT_31_22.Models;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class DisciplinesConfiguration : IEntityTypeConfiguration<Discipline>
+    public class DisciplineConfiguration : IEntityTypeConfiguration<Discipline>
     {
+        private const string TableName = "cd_discipline";
 
-        public const string tableName = "Disciplines";
         public void Configure(EntityTypeBuilder<Discipline> builder)
         {
-            builder
-                .HasKey(p => p.DisciplineId)
-                .HasName($"pk_{tableName}_disciplines_id");
+            builder.ToTable(TableName);
 
-            builder.Property(p => p.DisciplineId)
-                .ValueGeneratedOnAdd();
+            builder.HasKey(p => p.Id)
+                .HasName($"pk_{TableName}_id");
 
-            builder.Property(p => p.DisciplineId)
-                .HasColumnName("Disciplines_id")
-                .HasComment("Id дисциплины");
+            builder.Property(p => p.Id)
+                .HasColumnName("id")
+                .HasColumnType(ColumnType.Long)
+                .ValueGeneratedOnAdd()
+                .HasComment("Идентификатор дисциплины");
 
-            builder.Property(p => p.DisciplineName)
+            builder.Property(p => p.Name)
                 .IsRequired()
-                .HasColumnName("Disciplines_name")
-                .HasColumnType(ColumnType.String).HasMaxLength(150)
+                .HasColumnName("c_name")
+                .HasColumnType($"{ColumnType.String}(200)")
+                .HasMaxLength(200)
                 .HasComment("Название дисциплины");
 
+            builder.Property(p => p.Code)
+                .IsRequired()
+                .HasColumnName("c_code")
+                .HasColumnType($"{ColumnType.String}(20)")
+                .HasMaxLength(20)
+                .HasComment("Код дисциплины");
         }
     }
 }

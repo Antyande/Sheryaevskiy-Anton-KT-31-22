@@ -1,0 +1,8 @@
+﻿namespace SheryaevskiyAntonKT_31_22.DTO
+{
+    public class AcademicDegreeDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+}

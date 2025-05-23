@@ -2,9 +2,19 @@
 {
     public class Discipline
     {
-        public int DisciplineId { get; set; }
-        public string DisciplineName { get; set; }
-        public int? TeacherId { get; set; }
-        public Teacher Teacher { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Code { get; set; }
+        public bool IsDeleted { get; set; } = false;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
+        public ICollection<Workload> Workloads { get; set; }
+
+        public ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
+
+        // конект с нагрузкой
+
+
     }
 }

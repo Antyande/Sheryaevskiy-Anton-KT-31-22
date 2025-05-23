@@ -6,52 +6,63 @@ using SheryaevskiyAntonKT_31_22.Models;
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
     public class WorkloadConfiguration : IEntityTypeConfiguration<Workload>
-
     {
-        private const string TableName = "Workload";
+        private const string TableName = "cd_teacher_workload";
 
         public void Configure(EntityTypeBuilder<Workload> builder)
         {
-            builder.HasKey(s => s.WorkloadId).HasName($"pk_{TableName}_Id");
+            builder.ToTable(TableName);
 
-            builder.Property(s => s.WorkloadId)
+            builder.HasKey(p => p.Id)
+                .HasName($"pk_{TableName}_id");
+
+            builder.Property(p => p.Id)
+                .HasColumnName("id")
+                .HasColumnType(ColumnType.Long)
                 .ValueGeneratedOnAdd()
-                .HasColumnName("lesson_id")
-                .HasComment("Идентификатор занятия");
+                .HasComment("Идентификатор нагрузки");
 
-            builder.Property(s => s.DisciplineId)
-                .HasColumnName("discipline_id")
-                .HasComment("Идентификатор предмета");
-
-            builder.ToTable(TableName).HasOne(s => s.Disciplines)
-                .WithMany()
-                .HasForeignKey(s => s.DisciplineId)
-                .HasConstraintName($"fk_discipline_id")
-                .OnDelete(DeleteBehavior.Restrict);
-
-            builder.ToTable(TableName)
-                .HasIndex(p => p.DisciplineId, $"idx_{TableName}_fk_subject_id");
-
-            builder.Property(s => s.TeacherId)
-                .HasColumnName("teacher_id")
-                .HasComment("Идентификатор преподавателя");
-
-            builder.ToTable(TableName).HasOne(s => s.Teacher)
-                .WithMany()
-                .HasForeignKey(s => s.TeacherId)
-                .HasConstraintName($"fk_TeacherId_id")
-                .OnDelete(DeleteBehavior.Restrict);
-
-            builder.ToTable(TableName)
-                .HasIndex(p => p.TeacherId, $"idx_{TableName}_fk_TeacherId_id");
-
-            builder.Property(s => s.Hours)
-                .IsRequired()
-                .HasColumnName("workload_hours")
+            builder.Property(p => p.Hours)
+                .HasColumnName("n_hours")
                 .HasColumnType(ColumnType.Int)
-                .HasComment("Нагрузка в часах");
+                .HasComment("Количество часов");
+
+            builder.Property(p => p.Semester)
+                .HasColumnName("n_semester")
+                .HasColumnType(ColumnType.Int)
+                .HasComment("Семестр (1 или 2)");
+
+            builder.Property(p => p.Year)
+                .HasColumnName("n_year")
+                .HasColumnType(ColumnType.Int)
+                .HasComment("Год");
+
+            builder.Property(p => p.TeacherId)
+                .HasColumnName("f_teacher_id")
+                .HasColumnType(ColumnType.Long)
+                .HasComment("Ссылка на преподавателя");
+
+            builder.Property(p => p.DisciplineId)
+                .HasColumnName("f_discipline_id")
+                .HasColumnType(ColumnType.Long)
+                .HasComment("Ссылка на дисциплину");
+
+            builder.HasOne(tw => tw.Teacher)
+                .WithMany(t => t.Workloads)
+                .HasForeignKey(tw => tw.TeacherId)
+                .HasConstraintName($"fk_{TableName}_f_teacher_id")
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasOne(tw => tw.Discipline)
+                .WithMany(d => d.Workloads)
+                .HasForeignKey(tw => tw.DisciplineId)
+                .HasConstraintName($"fk_{TableName}_f_discipline_id")
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasIndex(p => new { p.TeacherId, p.DisciplineId, p.Semester, p.Year })
+                .HasDatabaseName($"idx_{TableName}_teacher_discipline_unique")
+                .IsUnique();
 
         }
-
     }
 }

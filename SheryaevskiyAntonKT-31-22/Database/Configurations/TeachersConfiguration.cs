@@ -5,93 +5,96 @@ using SheryaevskiyAntonKT_31_22.Models;
 
 namespace SheryaevskiyAntonKT_31_22.Database.Configurations
 {
-    public class TeachersConfiguration : IEntityTypeConfiguration<Teacher>
+    public class TeacherConfiguration : IEntityTypeConfiguration<Teacher>
     {
-        private const string tableName = "Teachers";
+        private const string TableName = "cd_teacher";
 
         public void Configure(EntityTypeBuilder<Teacher> builder)
         {
-            builder
-                .HasKey(p => p.TeacherId)
-                .HasName($"pk_{tableName}_Teachers_id");
+            builder.ToTable(TableName);
 
-            builder.Property(p => p.TeacherId)
-                .ValueGeneratedOnAdd();
+            builder.HasKey(p => p.Id)
+                .HasName($"pk_{TableName}_id");
 
-            builder.Property(p => p.TeacherId)
-                .HasColumnName("id_Teacher")
-                .HasComment("Id преподавателей");
+            builder.Property(p => p.Id)
+                .HasColumnName("id")
+                .HasColumnType(ColumnType.Long)
+                .ValueGeneratedOnAdd()
+                .HasComment("Идентификатор преподавателя");
 
             builder.Property(p => p.FirstName)
                 .IsRequired()
-                .HasColumnName("Teacher_firstname")
-                .HasColumnType(ColumnType.String).HasMaxLength(150)
+                .HasColumnName("c_firstname")
+                .HasColumnType($"{ColumnType.String}(100)")
+                .HasMaxLength(100)
                 .HasComment("Имя преподавателя");
 
             builder.Property(p => p.LastName)
                 .IsRequired()
-                .HasColumnName("Teacher_lastname")
-                .HasColumnType(ColumnType.String).HasMaxLength(150)
-                .HasComment("Отчество преподавателя");
-
-            builder.Property(p => p.MiddleName)
-                .IsRequired()
-                .HasColumnName("Teacher_midname")
-                .HasColumnType(ColumnType.String).HasMaxLength(150)
+                .HasColumnName("c_lastname")
+                .HasColumnType($"{ColumnType.String}(100)")
+                .HasMaxLength(100)
                 .HasComment("Фамилия преподавателя");
 
-            builder.Property(p => p.AcademicDegreeId)
-                .HasColumnName("Teacher_digreeId")
-                .HasColumnType(ColumnType.Int)
-                .HasComment("Степень преподавателя");
+            builder.Property(p => p.MiddleName)
+                .HasColumnName("c_middlename")
+                .HasColumnType($"{ColumnType.String}(100)")
+                .HasMaxLength(100)
+                .HasComment("Отчество преподавателя");
 
+            builder.Property(p => p.BirthDate)
+                .HasColumnName("d_birthdate")
+                .HasColumnType(ColumnType.Date)
+                .HasComment("Дата рождения");
 
-            builder.ToTable(tableName)
-                .HasOne(p => p.AcademicDegree)
-                .WithMany()
-                .HasForeignKey(p => p.AcademicDegreeId)
-                .HasConstraintName("fk_degree_id")
-                .OnDelete(DeleteBehavior.Restrict);
+            builder.Property(p => p.HireDate)
+                .HasColumnName("d_hiredate")
+                .HasColumnType(ColumnType.Date)
+                .HasComment("Дата приема на работу");
 
-            builder.ToTable(tableName)
-                .HasIndex(p => p.AcademicDegreeId, $"idx_{tableName}_fk_degree_id");
+            builder.Property(p => p.DepartmentId)
+                .HasColumnName("f_department_id")
+                .HasColumnType(ColumnType.Long)
+                .HasComment("Ссылка на кафедру");
 
             builder.Property(p => p.PositionId)
-                .HasColumnName("Teacher_positionId")
-                .HasColumnType(ColumnType.Int)
-                .HasComment("Должность преподавателя");
+                .HasColumnName("f_position_id")
+                .HasColumnType(ColumnType.Long)
+                .HasComment("Ссылка на должность");
 
+            builder.Property(p => p.AcademicDegreeId)
+                .HasColumnName("f_degree_id")
+                .HasColumnType(ColumnType.Long)
+                .HasComment("Ссылка на ученую степень");
 
-            builder.ToTable(tableName)
-                .HasOne(p => p.Position)
-                .WithMany()
-                .HasForeignKey(p => p.PositionId)
-                .HasConstraintName("fk_position_id")
+            builder.HasOne(t => t.Department)
+                .WithMany(d => d.Teachers)
+                .HasForeignKey(t => t.DepartmentId)
+                .HasConstraintName($"fk_{TableName}_f_department_id")
                 .OnDelete(DeleteBehavior.Restrict);
 
-            builder.ToTable(tableName)
-                .HasIndex(p => p.PositionId, $"idx_{tableName}_fk_position_id");
+            builder.HasOne(t => t.Position)
+                .WithMany(p => p.Teachers)
+                .HasForeignKey(t => t.PositionId)
+                .HasConstraintName($"fk_{TableName}_f_position_id")
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(t => t.AcademicDegree)
+                .WithMany(ad => ad.Teachers)
+                .HasForeignKey(t => t.AcademicDegreeId)
+                .HasConstraintName($"fk_{TableName}_f_degree_id")
+                .OnDelete(DeleteBehavior.SetNull);
+
+            builder.HasIndex(p => p.DepartmentId)
+                .HasDatabaseName($"idx_{TableName}_f_department_id");
+
+            builder.HasIndex(p => p.PositionId)
+                .HasDatabaseName($"idx_{TableName}_f_position_id");
+
+            builder.HasIndex(p => p.AcademicDegreeId)
+                .HasDatabaseName($"idx_{TableName}_f_degree_id");
 
 
-            builder.Property(p => p.CafedraId)
-                .IsRequired()
-                .HasColumnName("Teacher_cafedraId")
-                .HasColumnType(ColumnType.Int)
-                .HasComment("Кафедра преподавателя");
-
-
-            builder.ToTable(tableName)
-                .HasOne(p => p.Cafedra)
-                .WithMany()
-                .HasForeignKey(p => p.CafedraId)
-                .HasConstraintName("fk_cafedra_id")
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.ToTable(tableName)
-                .HasIndex(p => p.CafedraId, $"idx_{tableName}_fk_cafedra_id");
-
-            builder.Navigation(p => p.Cafedra).AutoInclude();
         }
-
     }
 }

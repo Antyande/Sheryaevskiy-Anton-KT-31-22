@@ -1,12 +1,21 @@
-﻿namespace SheryaevskiyAntonKT_31_22.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SheryaevskiyAntonKT_31_22.Models
 {
     public class Workload
     {
-        public int? WorkloadId { get; set; }
-        public int DisciplineId { get; set; }
-        public Discipline Disciplines { get; set; }
-        public int TeacherId { get; set; }
-        public Teacher Teacher { get; set; }
+        public int Id { get; set; }
         public int Hours { get; set; }
+        public int Semester { get; set; }
+        public int Year { get; set; }
+        public bool IsDeleted { get; set; } = false;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
+        public int TeacherId { get; set; }
+        public int DisciplineId { get; set; }
+
+        public Teacher Teacher { get; set; }
+        public Discipline Discipline { get; set; }
     }
 }

@@ -1,26 +1,29 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SheryaevskiyAntonKT_31_22.Database.Configurations;
 using SheryaevskiyAntonKT_31_22.Models;
+using static SheryaevskiyAntonKT_31_22.Database.Configurations.AcademicDegreesConfiguration;
 
 namespace SheryaevskiyAntonKT_31_22.Database
 {
     public class TeacherDbContext : DbContext
     {
-        DbSet<Cafedra> Cafedras { get; set; }
-        DbSet<AcademicDegree> Degrees { get; set; }
-        DbSet<Discipline> Disciplines { get; set; }
-        DbSet<Workload> Workload { get; set; }
-        DbSet<Position> Positions { get; set; }
-        DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<AcademicDegree> Degrees { get; set; }
+        public DbSet<Discipline> Disciplines { get; set; }
+        public DbSet<Workload> Workloads { get; set; }
+        public DbSet<Position> Positions { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new CafedrasConfiguration());
-            modelBuilder.ApplyConfiguration(new AcademicDegreesConfiguration());
-            modelBuilder.ApplyConfiguration(new DisciplinesConfiguration());
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfiguration(new AcademicDegreeConfiguration());
+            modelBuilder.ApplyConfiguration(new DepartmentConfiguration());
+            modelBuilder.ApplyConfiguration(new DisciplineConfiguration());
+            modelBuilder.ApplyConfiguration(new PositionConfiguration());
+            modelBuilder.ApplyConfiguration(new TeacherConfiguration());
             modelBuilder.ApplyConfiguration(new WorkloadConfiguration());
-            modelBuilder.ApplyConfiguration(new PositionsConfiguration());
-            modelBuilder.ApplyConfiguration(new TeachersConfiguration());
         }
         public TeacherDbContext(DbContextOptions<TeacherDbContext> options) : base(options)
         {
