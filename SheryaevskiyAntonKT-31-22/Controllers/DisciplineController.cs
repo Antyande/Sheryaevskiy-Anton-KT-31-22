@@ -31,5 +31,11 @@ namespace SheryaevskiyAntonKT_31_22.Controllers
 
             return Ok(disciplines);
         }
+
+        [HttpGet("error")]
+        public IActionResult TriggerError()
+        {
+            throw new Exception("Это тестовое исключение для проверки middleware");
+        }
     }
 }
